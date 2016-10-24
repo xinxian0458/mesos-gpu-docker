@@ -1,5 +1,13 @@
 # Getting Started
 
+Follow steps from https://github.com/NVIDIA/nvidia-docker/wiki/Deploy-on-Amazon-EC2
+```
+# Install NVIDIA drivers 361.42
+sudo apt-get install --no-install-recommends -y gcc make libc-dev
+wget -P /tmp http://us.download.nvidia.com/XFree86/Linux-x86_64/361.42/NVIDIA-Linux-x86_64-361.42.run
+sudo sh /tmp/NVIDIA-Linux-x86_64-361.42.run --silent
+
+```
 Clone this repo on an Nvidia GPU equipped machine with at least 2 GPUs
 (g2.8xlarge instances will do nicely).
 

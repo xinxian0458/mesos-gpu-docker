@@ -49,7 +49,7 @@ ${BIN_DIR}/nvidia-docker run \
     -e "LIBPROCESS_IP=$LIBPROCESS_IP" \
 	$SET_GPU_RESOURCES \
     -e "MESOS_CGROUPS_HIERARCHY=/sys/fs/cgroup/docker" \
-    -v /sys/fs/cgroup/docker \
+    -v /sys/fs/cgroup/docker:/sys/fs/cgroup/docker \
     --privileged \
     --name mesos-agent \
     mesos-agent
